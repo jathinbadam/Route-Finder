@@ -1,0 +1,585 @@
+<html>
+<head>
+<meta name="viewport" content="initial-scale=1.0, user-scalable=no" />
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>Google Maps - pygmaps </title>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=visualization&sensor=true_or_false"></script>
+<script type="text/javascript">
+	function initialize() {
+		var centerlatlng = new google.maps.LatLng(17.417440, 78.495712);
+		var myOptions = {
+			zoom: 11,
+			center: centerlatlng,
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		var map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+
+		var latlng = new google.maps.LatLng(17.540939, 78.573921);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Birla Institute of Technology Hyderabad",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.513990, 78.529846);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Yapral ",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.447130, 78.535927);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Malkajgiri",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.417440, 78.495712);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Bakaram",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.411091, 78.460838);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Khairatabad",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.369169, 78.436829);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Attapur",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.339018, 78.441780);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Sivarampalli",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.311890, 78.393272);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "Rajendranagar Mandal",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.236650, 78.429367);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/008000.png');
+		var marker = new google.maps.Marker({
+		title: "RGIA",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.360331, 78.501137);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kurmaguda",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.340179, 78.379143);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kismatpur",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.444521, 78.507553);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kothapet Village Secunderabad",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.401440, 78.391663);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Manikonda",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.415051, 78.434319);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Banjara Hills",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.426029, 78.421402);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Jubilee Hills",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.435341, 78.448608);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Ameerpet",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.347260, 78.543327);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "L B Nagar",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.495100, 78.325851);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Gangaram Hyderabad Chanda Nagar",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.545601, 78.254532);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Pocharam",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.369860, 78.563004);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Nagole",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.391319, 78.545181);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Uppal",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.451052, 78.381485);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Hitec City",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.468550, 78.456192);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Balanagar",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.487350, 78.420868);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kukatpally",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.475790, 78.497787);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Trimulgherry",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.454161, 78.552361);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Moula Ali",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.535431, 78.544273);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Alwal",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.506140, 78.501038);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Old Alwal",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.524599, 78.511398);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Bolarum",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.472589, 78.545647);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Sainikpuri",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.491280, 78.571037);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kapra",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.500000, 78.583000);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Dammaiguda",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.365999, 78.475998);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Daira Hyderabad",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.437201, 78.344398);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Gachibowli",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.463776, 78.359077);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kondapur",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.495100, 78.325851);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Chanda Nagar",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.502859, 78.351799);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Miyapur",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.550791, 78.370132);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Bachupally",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.505360, 78.467491);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Quthbullapur",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.533180, 78.481018);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Kompally Hyderabad",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.638161, 78.482857);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/0000FF.png');
+		var marker = new google.maps.Marker({
+		title: "Medchal",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.540939, 78.573921);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "Birla Institute of Technology Hyderabad",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+		var latlng = new google.maps.LatLng(17.236650, 78.429367);
+		var img = new google.maps.MarkerImage('/home/jathin/anaconda3/lib/python3.7/site-packages/gmplot/markers/FF0000.png');
+		var marker = new google.maps.Marker({
+		title: "RGIA",
+		icon: img,
+		position: latlng
+		});
+		marker.setMap(map);
+
+var PolylineCoordinates = [
+new google.maps.LatLng(17.236650, 78.429367),
+new google.maps.LatLng(17.495100, 78.325851),
+new google.maps.LatLng(17.236650, 78.429367),
+new google.maps.LatLng(17.360331, 78.501137),
+new google.maps.LatLng(17.236650, 78.429367),
+new google.maps.LatLng(17.311890, 78.393272),
+new google.maps.LatLng(17.236650, 78.429367),
+new google.maps.LatLng(17.340179, 78.379143),
+new google.maps.LatLng(17.495100, 78.325851),
+new google.maps.LatLng(17.360331, 78.501137),
+new google.maps.LatLng(17.360331, 78.501137),
+new google.maps.LatLng(17.444521, 78.507553),
+new google.maps.LatLng(17.360331, 78.501137),
+new google.maps.LatLng(17.339018, 78.441780),
+new google.maps.LatLng(17.311890, 78.393272),
+new google.maps.LatLng(17.339018, 78.441780),
+new google.maps.LatLng(17.339018, 78.441780),
+new google.maps.LatLng(17.444521, 78.507553),
+new google.maps.LatLng(17.444521, 78.507553),
+new google.maps.LatLng(17.347260, 78.543327),
+new google.maps.LatLng(17.339018, 78.441780),
+new google.maps.LatLng(17.369169, 78.436829),
+new google.maps.LatLng(17.311890, 78.393272),
+new google.maps.LatLng(17.369169, 78.436829),
+new google.maps.LatLng(17.340179, 78.379143),
+new google.maps.LatLng(17.369169, 78.436829),
+new google.maps.LatLng(17.340179, 78.379143),
+new google.maps.LatLng(17.401440, 78.391663),
+new google.maps.LatLng(17.401440, 78.391663),
+new google.maps.LatLng(17.437201, 78.344398),
+new google.maps.LatLng(17.369169, 78.436829),
+new google.maps.LatLng(17.411091, 78.460838),
+new google.maps.LatLng(17.437201, 78.344398),
+new google.maps.LatLng(17.495100, 78.325851),
+new google.maps.LatLng(17.495100, 78.325851),
+new google.maps.LatLng(17.502859, 78.351799),
+new google.maps.LatLng(17.437201, 78.344398),
+new google.maps.LatLng(17.502859, 78.351799),
+new google.maps.LatLng(17.437201, 78.344398),
+new google.maps.LatLng(17.463776, 78.359077),
+new google.maps.LatLng(17.502859, 78.351799),
+new google.maps.LatLng(17.463776, 78.359077),
+new google.maps.LatLng(17.463776, 78.359077),
+new google.maps.LatLng(17.550791, 78.370132),
+new google.maps.LatLng(17.437201, 78.344398),
+new google.maps.LatLng(17.451052, 78.381485),
+new google.maps.LatLng(17.451052, 78.381485),
+new google.maps.LatLng(17.550791, 78.370132),
+new google.maps.LatLng(17.451052, 78.381485),
+new google.maps.LatLng(17.487350, 78.420868),
+new google.maps.LatLng(17.451052, 78.381485),
+new google.maps.LatLng(17.426029, 78.421402),
+new google.maps.LatLng(17.550791, 78.370132),
+new google.maps.LatLng(17.487350, 78.420868),
+new google.maps.LatLng(17.550791, 78.370132),
+new google.maps.LatLng(17.468550, 78.456192),
+new google.maps.LatLng(17.487350, 78.420868),
+new google.maps.LatLng(17.468550, 78.456192),
+new google.maps.LatLng(17.426029, 78.421402),
+new google.maps.LatLng(17.468550, 78.456192),
+new google.maps.LatLng(17.426029, 78.421402),
+new google.maps.LatLng(17.415051, 78.434319),
+new google.maps.LatLng(17.415051, 78.434319),
+new google.maps.LatLng(17.435341, 78.448608),
+new google.maps.LatLng(17.468550, 78.456192),
+new google.maps.LatLng(17.505360, 78.467491),
+new google.maps.LatLng(17.435341, 78.448608),
+new google.maps.LatLng(17.505360, 78.467491),
+new google.maps.LatLng(17.435341, 78.448608),
+new google.maps.LatLng(17.417440, 78.495712),
+new google.maps.LatLng(17.415051, 78.434319),
+new google.maps.LatLng(17.411091, 78.460838),
+new google.maps.LatLng(17.468550, 78.456192),
+new google.maps.LatLng(17.435341, 78.448608),
+new google.maps.LatLng(17.505360, 78.467491),
+new google.maps.LatLng(17.475790, 78.497787),
+new google.maps.LatLng(17.475790, 78.497787),
+new google.maps.LatLng(17.447130, 78.535927),
+new google.maps.LatLng(17.417440, 78.495712),
+new google.maps.LatLng(17.447130, 78.535927),
+new google.maps.LatLng(17.411091, 78.460838),
+new google.maps.LatLng(17.417440, 78.495712),
+new google.maps.LatLng(17.411091, 78.460838),
+new google.maps.LatLng(17.347260, 78.543327),
+new google.maps.LatLng(17.347260, 78.543327),
+new google.maps.LatLng(17.369860, 78.563004),
+new google.maps.LatLng(17.369860, 78.563004),
+new google.maps.LatLng(17.391319, 78.545181),
+new google.maps.LatLng(17.417440, 78.495712),
+new google.maps.LatLng(17.391319, 78.545181),
+new google.maps.LatLng(17.391319, 78.545181),
+new google.maps.LatLng(17.545601, 78.254532),
+new google.maps.LatLng(17.369860, 78.563004),
+new google.maps.LatLng(17.365999, 78.475998),
+new google.maps.LatLng(17.365999, 78.475998),
+new google.maps.LatLng(17.545601, 78.254532),
+new google.maps.LatLng(17.391319, 78.545181),
+new google.maps.LatLng(17.454161, 78.552361),
+new google.maps.LatLng(17.545601, 78.254532),
+new google.maps.LatLng(17.491280, 78.571037),
+new google.maps.LatLng(17.545601, 78.254532),
+new google.maps.LatLng(17.500000, 78.583000),
+new google.maps.LatLng(17.454161, 78.552361),
+new google.maps.LatLng(17.491280, 78.571037),
+new google.maps.LatLng(17.491280, 78.571037),
+new google.maps.LatLng(17.500000, 78.583000),
+new google.maps.LatLng(17.500000, 78.583000),
+new google.maps.LatLng(17.540939, 78.573921),
+new google.maps.LatLng(17.491280, 78.571037),
+new google.maps.LatLng(17.472589, 78.545647),
+new google.maps.LatLng(17.454161, 78.552361),
+new google.maps.LatLng(17.472589, 78.545647),
+new google.maps.LatLng(17.454161, 78.552361),
+new google.maps.LatLng(17.513990, 78.529846),
+new google.maps.LatLng(17.472589, 78.545647),
+new google.maps.LatLng(17.540939, 78.573921),
+new google.maps.LatLng(17.447130, 78.535927),
+new google.maps.LatLng(17.513990, 78.529846),
+new google.maps.LatLng(17.513990, 78.529846),
+new google.maps.LatLng(17.540939, 78.573921),
+new google.maps.LatLng(17.475790, 78.497787),
+new google.maps.LatLng(17.533180, 78.481018),
+new google.maps.LatLng(17.533180, 78.481018),
+new google.maps.LatLng(17.506140, 78.501038),
+new google.maps.LatLng(17.506140, 78.501038),
+new google.maps.LatLng(17.535431, 78.544273),
+new google.maps.LatLng(17.535431, 78.544273),
+new google.maps.LatLng(17.540939, 78.573921),
+new google.maps.LatLng(17.535431, 78.544273),
+new google.maps.LatLng(17.524599, 78.511398),
+new google.maps.LatLng(17.524599, 78.511398),
+new google.maps.LatLng(17.540939, 78.573921),
+new google.maps.LatLng(17.524599, 78.511398),
+new google.maps.LatLng(17.638161, 78.482857),
+new google.maps.LatLng(17.638161, 78.482857),
+new google.maps.LatLng(17.540939, 78.573921),
+];
+
+var Path = new google.maps.Polyline({
+clickable: false,
+geodesic: true,
+path: PolylineCoordinates,
+strokeColor: "#000000",
+strokeOpacity: 1.000000,
+strokeWeight: 2
+});
+
+Path.setMap(map);
+
+
+var PolylineCoordinates = [
+new google.maps.LatLng(17.540939, 78.573921),
+new google.maps.LatLng(17.513990, 78.529846),
+new google.maps.LatLng(17.447130, 78.535927),
+new google.maps.LatLng(17.417440, 78.495712),
+new google.maps.LatLng(17.411091, 78.460838),
+new google.maps.LatLng(17.369169, 78.436829),
+new google.maps.LatLng(17.339018, 78.441780),
+new google.maps.LatLng(17.311890, 78.393272),
+new google.maps.LatLng(17.236650, 78.429367),
+];
+
+var Path = new google.maps.Polyline({
+clickable: false,
+geodesic: true,
+path: PolylineCoordinates,
+strokeColor: "#008000",
+strokeOpacity: 1.000000,
+strokeWeight: 5
+});
+
+Path.setMap(map);
+
+
+	}
+</script>
+</head>
+<body style="margin:0px; padding:0px;" onload="initialize()">
+	<div id="map_canvas" style="width: 100%; height: 100%;"></div>
+</body>
+</html>

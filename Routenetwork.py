@@ -1,0 +1,35 @@
+class Routenetwork:
+    def __init__(self, gdict=None):
+        if gdict is None:
+            gdict = {}
+        self.gdict = gdict
+
+    def getVertices(self):
+        return list(self.gdict.keys())
+
+    def getEdges(self):
+        edges=[]
+        for key,value in self.gdict.items():
+            for node in value:
+                temp=(key,node)
+                edges.append(temp)
+        return edges
+
+    def addEdge(self, edge):
+            edge = set(edge)
+            (v1, v2) = tuple(edge)
+            if v1 in self.gdict:
+                self.gdict[v1].append(v2)
+                if v2 not in self.gdict:
+                    self.gdict[v2] = [v1]
+                else:
+                    self.gdict[v2].append(v1)
+            else:
+                self.gdict[v1] = [v2]
+                if v2 not in self.gdict:
+                    self.gdict[v2] = [v1]
+                else:
+                    self.gdict[v2].append(v1)
+
+    def getRoutenetwork(self):
+        return self.gdict
